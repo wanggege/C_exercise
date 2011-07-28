@@ -19,20 +19,6 @@ void get_binary(unsigned int input)
     int tmp;
     unsigned int mask = 0xf;
     int i;
-   /* while(input)
-    {
-        tmp = input % 16;
-        if(tmp<10)
-        {
-           printf("%d",tmp);
-        }
-        else
-        {
-            printf("%c",tmp-10+'A');
-        }
-
-        input /= 16;
-    }*/
     for (i = 28; i >= 0;) 
     {
         tmp = (input>>i)&mask;

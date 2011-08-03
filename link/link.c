@@ -27,24 +27,9 @@ int main(int argc, const char *argv[])
 //    head = insert_node(head);
 //    print_link(head);
 
-    head = delete_node(head, 2);
-    print_link(head);
+   head = delete_node(head, 5);
+   print_link(head);
 
-//    printf("node = %d\n",count_node(head));
-/*    ptr = malloc(sizeof(STU));    
-
-    if(ptr==NULL)
-    {
-        perror("malloc");           
-        exit(0);
-    }
-
-    ptr->num = 1;
-    strcpy(ptr->name,"wang");
-
-    printf("num = %d\n",ptr->num);
-    printf("name = %s\n",ptr->name);*/
-   
    free(head); 
    return 0;
 }
@@ -85,6 +70,12 @@ STU *creat_link(int n)
 
 void print_link(STU *p)
 {
+    if(p==NULL)
+    {
+        printf("linked list is empty\n");
+        return;
+    }
+
     while(p)
     {
         printf("num = %d\n",p->num);
@@ -124,6 +115,11 @@ STU *insert_node(STU *p)
     scanf("%s",p1->name);
     p1->next = NULL;
 
+    if(p==NULL)
+    {
+        return p1;
+    }
+
     if((p1->num) < (p->num))
     {
         p1->next = head;
@@ -152,7 +148,6 @@ STU *insert_node(STU *p)
 STU *delete_node(STU *p, int num)
 {
     STU *head = p;
-  //  STU *pre = p;
     STU *tmp = NULL;
 
     if(p->num == num)
@@ -169,8 +164,15 @@ STU *delete_node(STU *p, int num)
             tmp = p->next;
             p->next = p->next->next;
             free(tmp);
+            return head;//若将return放外面则查找尾节点出现断错误
         }
+    }   
+
+    if(p->next==NULL)
+    {
+        printf("no number match\n");
+        return head;
     }
 
-    return head;
+   // return head;
 }

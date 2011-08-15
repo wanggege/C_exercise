@@ -35,9 +35,3 @@ void delete_repeat_digital(int *array, int len)
 	putchar('\n');
 }
 
-int main(int argc, char *argv[])
-{
-    int array[10] = {1,2,1,4,6,2,6,8,9,4};
-	delete_repeat_digital(array,10);
-    return 0;
-}

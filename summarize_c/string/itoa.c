@@ -48,6 +48,7 @@ void itoa(int num, char str[])
 	reverse(str);
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     char str[MAX];
@@ -57,3 +58,4 @@ int main(int argc, char *argv[])
 	return 0;
 
 }
+#endif

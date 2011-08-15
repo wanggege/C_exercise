@@ -34,6 +34,7 @@ void sort(int *int_array, int len)
 	putchar('\n');
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     int int_array[MAX] = {2,1,4,6,3,5,7,8,9,0};
@@ -41,3 +42,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+#endif

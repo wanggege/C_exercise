@@ -21,16 +21,3 @@ void swap2(int *a, int *b)
     *a = *a ^ *b;
 }
 
-int main(int argc, char *argv[])
-{
-    int a = 3; 
-	int b = 4;
-
-	printf("before swap a = %d, b = %d\n",a,b);
-	swap1(&a,&b);
-	printf("after swap1 a = %d, b = %d\n",a,b);
-	swap1(&a,&b);
-	printf("after swap2 a = %d, b = %d\n",a,b);
-
-	return 0;
-}

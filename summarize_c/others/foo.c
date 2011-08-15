@@ -38,17 +38,3 @@ void foo(int num, int base)
 	putchar('\n');
 }
 
-int main(int argc, char *argv[])
-{
-    if(argc!=3)
-	{
-	    printf("please input two num\n");
-		return 0;
-	}
-
-	int num = atoi(argv[1]);
-	int base = atoi(argv[2]);
-	foo(num,base);
-
-	return 0;
-}

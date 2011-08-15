@@ -33,10 +33,3 @@ void remove_space(char *array)
      printf(">>\n");
 }
 
-int main(int argc, char *argv[])
-{
-    char *str = "  123   23 312  45  ";
-	remove_space(str);
-
-	return 0;
-}

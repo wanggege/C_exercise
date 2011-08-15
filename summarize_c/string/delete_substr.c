@@ -28,6 +28,7 @@ void delete_substr(char *src, char * substr)
 	src[k] = '\0';
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=3)
@@ -42,3 +43,4 @@ int main(int argc, char *argv[])
    
     return 0;	
 }
+#endif 

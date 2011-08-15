@@ -29,9 +29,3 @@ int countnine(int num)
 	return total;
 }
 
-int main(int argc, char * argv[])
-{
-    int num = 100; 
-    printf("there is %d 9 in %d\n",countnine(num),num);
-	return 0;
-}

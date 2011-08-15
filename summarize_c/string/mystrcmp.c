@@ -23,6 +23,7 @@ int mystrcmp(char *s1, char *s2)
 	return *s1-*s2;
 }
 
+#if 0
 int main(int argc, char * argv[])
 {
     if(argc!=3)
@@ -36,3 +37,4 @@ int main(int argc, char * argv[])
 	return 0;
 
 }
+#endif

@@ -26,6 +26,7 @@ char * mystrcpy(char *dest, char *src)
 	return tmp;
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=2)
@@ -38,3 +39,4 @@ int main(int argc, char *argv[])
 	printf("dest = %s\n",mystrcpy(dest,argv[1]));
 	return 0;
 }
+#endif

@@ -48,8 +48,3 @@ void josephring(int peoplenum)
 
 }
 
-int main(int argc, char *argv[])
-{
-     josephring(6);
-	 return 0;
-}

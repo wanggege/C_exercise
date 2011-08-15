@@ -43,6 +43,7 @@ int myatoi(char *str)
 	}
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=2)
@@ -53,3 +54,4 @@ int main(int argc, char *argv[])
     printf("%d\n",myatoi(argv[1]));
 	return 0;
 }
+#endif

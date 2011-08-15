@@ -24,14 +24,3 @@ int counter(unsigned int num)
 	return count;
 }
 
-int main(int argc, char *argv[])
-{
-    if(argc!=2)
-	{
-	    printf("please input a num\n");
-		return 0;
-	}
-
-	printf("The number you input contains %d 1s\n",counter(atoi(argv[1])));
-	return 0;
-}

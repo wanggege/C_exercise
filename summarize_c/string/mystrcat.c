@@ -23,6 +23,7 @@ char * mystrcat(char *s1, char *s2)
 	return tmp;
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=3)
@@ -34,3 +35,4 @@ int main(int argc, char *argv[])
 	printf("after cat the string is %s\n",mystrcat(argv[1],argv[2]));
 	return 0;
 }
+#endif

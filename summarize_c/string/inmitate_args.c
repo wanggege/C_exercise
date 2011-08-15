@@ -43,8 +43,10 @@ void inmitate_args(void)
 
 }
 
+#if 0
 int main()
 {
     inmitate_args();
 	return 0;
 }
+#endif

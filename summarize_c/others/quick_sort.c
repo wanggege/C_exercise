@@ -39,17 +39,3 @@ void quick_sort(int *int_array, int start, int end)
 
 }
 
-int main(int argc, char *argv[])
-{
-    int i;
-    int int_array[MAX] = {2,1,4,6,3,5,7,8,9,0};
-	quick_sort(int_array,0,MAX-1);
-    for(i = 0; i < MAX; i++)
-	{
-	    printf("%d",int_array[i]);
-	}
-  
-	putchar('\n');
-    
-	return 0;
-}

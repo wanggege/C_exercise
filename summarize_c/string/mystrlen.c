@@ -24,6 +24,7 @@ int mystrlen(char *src)
 	return len;
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=2)
@@ -35,3 +36,4 @@ int main(int argc, char *argv[])
 	printf("the string's len  which you input is %d\n",mystrlen(argv[1]));
 	return 0;
 }
+#endif

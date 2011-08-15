@@ -37,6 +37,7 @@ char *mystrstr(char *src, char *dest)
 	}
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=3)
@@ -55,3 +56,4 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
+#endif

@@ -19,14 +19,3 @@ void print_binary(int num)
     putchar('\n');
 }
 
-int main(int argc, char *argv[])
-{
-    if(argc!=2)
-	{
-	    printf("input an num\n");
-		return 0;
-	}
-
-    print_binary(atoi(argv[1]));
-	return 0;
-}

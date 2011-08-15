@@ -18,15 +18,3 @@ void hanio(int n, char a, char b, char c)
 	printf("%c------------>%c\n",a,c);
 	hanio(n-1,b,a,c);
 }
-
-int main(int argc, char *argv[])
-{
-    char a = 'A';
-    char b = 'B';
-    char c = 'C';
-
-	int n = 3;
-	hanio(n,a,b,c);
-
-	return 0;
-}

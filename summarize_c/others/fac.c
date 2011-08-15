@@ -19,6 +19,7 @@ long fac(int num)
 	}
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     int num;
@@ -33,3 +34,5 @@ int main(int argc, char *argv[])
 	printf("%d!=%ld\n",num,fac(num));
 	return 0;
 }
+
+#endif

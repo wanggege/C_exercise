@@ -56,6 +56,7 @@ float myatof(char *str)
 
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=2)
@@ -66,3 +67,4 @@ int main(int argc, char *argv[])
 
 	printf("%f\n",myatof(argv[1]));
 }
+#endif

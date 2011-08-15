@@ -20,6 +20,7 @@ int is_leap_year(int year)
     }
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     int year;
@@ -43,3 +44,4 @@ int main(int argc, char *argv[])
 	return 0;
 
 }
+#endif

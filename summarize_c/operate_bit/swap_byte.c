@@ -24,18 +24,3 @@ unsigned short swap_byte(unsigned short num)
     return (num>>8)|(num<<8);
 }
 
-int main(int argc, char *argv[])
-{
-    if(argc!=2)
-	{
-	    printf("input an num\n");
-		return 0;
-	}
-
-    printf("before swap\n");
-    print_binary(atoi(argv[1]));
-    printf("after swap\n");
-	print_binary(swap_byte(atoi(argv[1])));
-
-	return 0;
-}

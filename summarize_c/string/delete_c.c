@@ -31,6 +31,7 @@ void delete_c(char *str, char c)
 	str[j] = '\0';
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     char str[] = "helloworld";
@@ -39,3 +40,4 @@ int main(int argc, char *argv[])
 	printf("%s\n",str);
 	return 0;
 }
+#endif

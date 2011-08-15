@@ -28,6 +28,7 @@ char *mystrncpy(char *dest, char *src, int nbyte)
 	return tmp;
 }
 
+#if 0
 int main(int argc, char *argv[])
 {
     if(argc!=3)
@@ -40,3 +41,4 @@ int main(int argc, char *argv[])
 	printf("src = %s\n dest = %s\n",argv[1],mystrncpy(dest,argv[1],atoi(argv[2])));
 	return 0;
 }
+#endif

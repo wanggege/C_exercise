@@ -1,18 +1,16 @@
-main:main.o add.o sub.o mul.o
-	gcc add.o sub.o mul.o main.o -o main
+src = $(wildcard *.c)
+obj = $(patsubst %.c,%.o,$(src))
+CC = gcc
+CFLAGS = -Wall -g
+#LDFLAGS	
 
-add.o:add.c add.h
-	gcc -c add.c -o add.o
+main:$(obj)
+	$(CC) $^ -o $@
+%.o:%.c
+	$(CC) $(CFLAGS) $< -c
 
-sub.o:sub.c add.h
-	gcc -c sub.c -o sub.o
-
-mul.o:mul.c add.h
-	gcc -c mul.c -o mul.o
-
-main.o:main.c add.h
-	gcc -c main.c -o main.o
+.PHONY:clean
 
 clean:
-	-rm -f add.o main.o sub.o mul.o
-	-rm -f main
+	rm -rf *.o
+	rm -rf main

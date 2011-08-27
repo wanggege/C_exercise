@@ -6,6 +6,7 @@ void print_item(link p)
     printf("%d\n",p->item);
 }
 
+
 int main(int argc, char *argv[])
 {
     link p = make_node(10);
@@ -18,8 +19,8 @@ int main(int argc, char *argv[])
 	delete_node(p);
 	free_node(p);
 
-	traverse(print_item);
-	destory();
+    traverse(print_item);
+    destory();
 
 	p = make_node(100);
 	push(p);

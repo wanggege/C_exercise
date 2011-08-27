@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 static link head = NULL;
+link head_t = NULL;
 
 link make_node(int item)
 {
@@ -41,6 +42,12 @@ link search(int key)
 void insert(link p)
 {
     p->next = head;
+	head = p;
+}
+
+void insert_t(link p)
+{
+    p->next = head_t;
 	head = p;
 }
 
@@ -103,4 +110,5 @@ link pop(void)
 	    return p;
 	}
 }
+
 

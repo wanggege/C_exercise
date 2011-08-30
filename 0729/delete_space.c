@@ -1,74 +1,35 @@
 #include <stdio.h>
 
-void delete_null(void);
-char str[128] = "./a.out    100        200";
+void delete_null(char *src);
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    int i;
+    char input_buff[100];
+    printf("input the string you want to delete space\n");
+    gets(input_buff);
 
-    delete_null();
-//    printf("%s\n",str);
+    delete_null(input_buff);
     return 0;
 }
 
-void delete_null(void)
+void delete_null(char * str)
 {
     int i = 0;
     int state = 1;
 
     while(str[i])
     {
+        if(str[i]!=' ')
+	{
+	    printf("%c",str[i]);
+	    state = 0;
+	}
 
-        if(str[i] != ' ')
-        {
-            if(state==1)
-            {
-                printf("%c",str[i]);
-                state = 0;
-            
-            }
-            else
-            {
-                printf("%c",str[i]);
-            }
-        }
-/*        if((state==1)&&(str[i]!=' '))
-        {
-            printf("%c",str[i]);
-            state = 0;
-           
-        } */
-
-//        if((state==1)&&(str[i]==' '))
-  //      {
-    //        i++;
-      //  }
-
-        if(str[i]==' ')
-        {
-            if(state==0)
-            {
-                printf("%c",str[i]);
-                i++;
-                state = 1;
-            }
-            else
-            {
-                i++;
-            }
-        }
-       /* if((state==0)&&(str[i]!=' '))
-        {
-            printf("%c",str[i]);
-        }*/
-
-       // if((state==0)&&(str[i]==' '))
-       // {
-         //   printf("%c",str[i]);
-           // i++;
-          //  state = 1;
-      //  }  
+	if((state==0)&&(str[i])==' ')
+	{
+	    printf("%c",str[i]);
+	    state = 1;
+	}
         i++;
     }
     
